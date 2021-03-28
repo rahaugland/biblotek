@@ -1,15 +1,13 @@
 import {BrowserRouter as Router, Route, RouteProps, Switch} from "react-router-dom";
 import Home from "./Home";
-import AddSemester from "./AddSemester"
 import CssBaseline from "@material-ui/core/CssBaseline";
 import {Redirect} from "react-router";
-import "./firebase"
-import firebase, {firebaseConfig} from "./firebase";
+import AddSemester from "./AddSemester";
 
 function App(){
     return(
         <div className="App">
-          <CssBaseline/>
+            <CssBaseline/>
             <Router>
                 <Switch>
                     <Route exact path="/">
@@ -23,4 +21,5 @@ function App(){
         </div>
     )
 }
+
 export default App;
